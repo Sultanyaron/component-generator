@@ -1,0 +1,9 @@
+import TemplateComponentName from "./TemplateComponentName";
+
+export default {
+  title: "TemplateComponentName",
+};
+
+export const TemplateComponentNameStory = () => {
+  return <TemplateComponentName />;
+};

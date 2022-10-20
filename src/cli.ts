@@ -3,8 +3,7 @@ import { promptOptions } from "./utils/promptOptions";
 import { generateComponent } from "./utils/generateComponent";
 
 export async function cli(args: Args) {
-  const options = await promptOptions();
-  console.log(options);
+  const promptAnswers = await promptOptions();
 
-  await generateComponent(options.componentName);
+  await generateComponent(promptAnswers);
 }

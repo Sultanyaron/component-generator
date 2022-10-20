@@ -1,5 +1,4 @@
-import React from "react";
-import * as S from './TemplateComponentName.style.ts";
+import * as S from './TemplateComponentName.style";
 
 const TemplateComponentName = () => {
   return <S.Container>TemplateComponentName</S.Container>;

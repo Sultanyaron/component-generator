@@ -6,5 +6,6 @@ export default {
     dir: "dist",
     format: "es",
   },
+
   plugins: [typescript()],
 };

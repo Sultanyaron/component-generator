@@ -1,0 +1,25 @@
+# default ignores
+.*.swp
+._*
+.DS_Store
+.git
+.hg
+.npmrc
+.lock-wscript
+.svn
+.wafpickle-*
+.idea
+config.gypi
+CVS
+npm-debug.log
+
+#project ignores
+.github
+.gitignore
+.npmignore
+jest.config.js
+package-lock.json
+rollup.config.js
+tsconfig.json
+/src
+/templates

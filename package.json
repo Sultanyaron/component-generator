@@ -1,6 +1,7 @@
 {
   "name": "@sultanyaron/component-generator",
   "version": "1.0.0",
+  "private": false,
   "description": "",
   "main": "dist/cli.js",
   "type": "module",

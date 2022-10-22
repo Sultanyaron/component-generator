@@ -38,7 +38,7 @@ export async function promptOptions(): Promise<PromptAnswers> {
           value: "reuseable",
         },
         { name: "Component with test", value: "withTest" },
-        { name: "Custom (Choose your files)", value: "custom" },
+        { name: "Custom (Choose your files)", value: "custom", disabled: true },
       ],
     },
     {

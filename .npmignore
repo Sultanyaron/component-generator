@@ -26,3 +26,4 @@ tsconfig.json
 .eslintrc
 .prettierrc
 .prettierignore
+/.husky

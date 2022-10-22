@@ -3,8 +3,21 @@
     "browser": true,
     "es2021": true
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".tsx"]
+      }
+    }
+  },
   "overrides": [],
-  "extends": ["standard-with-typescript", "prettier", "eslint-config-prettier"],
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "standard-with-typescript",
+    "prettier",
+    "eslint-config-prettier"
+  ],
   "plugins": ["prettier", "@typescript-eslint"],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -12,6 +25,9 @@
     "project": ["./tsconfig.json"]
   },
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "import/prefer-default-export": "off"
+    // "import/no-unresolved": "off"
+    // "import/extensions": ["off"]
   }
 }

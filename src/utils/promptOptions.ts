@@ -31,7 +31,7 @@ export async function promptOptions(): Promise<PromptAnswers> {
     {
       type: "list",
       name: "template",
-      message: "Which type of component",
+      message: "Please choose template type",
       choices: [
         { name: "Default", value: "default" },
         { name: "Custom", value: "custom" },

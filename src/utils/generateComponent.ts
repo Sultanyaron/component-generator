@@ -13,7 +13,7 @@ export const generateComponent = async (promptAnswers: PromptAnswers, destinatio
   // await createComponentBasicFiles(destinationPath, promptAnswers.componentName);
   // await createComponentBasicFiles(destinationPath, promptAnswers.componentName);
 
-  if (promptAnswers.template === 'reuseabl') {
+  if (promptAnswers.template === 'reuseable') {
     await createReusableComponent(destinationPath, promptAnswers.componentName);
   }
 

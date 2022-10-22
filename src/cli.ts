@@ -15,11 +15,8 @@ export async function cli(args: Args) {
 
 // TODOS
 // create different combinations
-//  - Reuseable component (all)
-//  - Component with test (Component + style + types + test)
 //  - Custom (Test, Story, Style, Types)
 // add eslint
 // add prettier
 // write tests
-// bump release version on CI
 // readme

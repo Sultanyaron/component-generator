@@ -9,4 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Changelog
+- Pre made templates: `Reuseable component` and `Component with test`
+
+### Removed
+
+- Support for custom template selection

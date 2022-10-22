@@ -11,6 +11,7 @@
   "lint-staged": {
     "src/**/*": [
       "npm run eslint",
+      "npm run types-check",
       "npm run prettier:write"
     ]
   },
@@ -20,7 +21,8 @@
     "test": "jest --watch",
     "prettier:write": "prettier --write ./src",
     "prepare": "husky install",
-    "eslint": "eslint src --color"
+    "eslint": "eslint src --color",
+    "types-check": "tsc --noEmit --pretty"
   },
   "keywords": [],
   "author": "sultanyaron@gmail.com",

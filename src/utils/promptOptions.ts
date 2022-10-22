@@ -47,7 +47,6 @@ export async function promptOptions(): Promise<PromptAnswers> {
       choices: [
         { name: "Test", value: "test" },
         { name: "Story", value: "story" },
-        { name: "Hook", value: "hook" },
       ],
     },
   ];

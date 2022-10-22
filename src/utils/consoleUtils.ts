@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import tree from 'tree-node-cli';
 
 export const consoleFolderStructure = (folderPath: string) => {

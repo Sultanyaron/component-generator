@@ -19,8 +19,4 @@ export const generateComponent = async (promptAnswers: PromptAnswers, destinatio
   if (promptAnswers.template === 'withTest') {
     await createWithTestComponent(destinationPath, promptAnswers.componentName);
   }
-
-  if (promptAnswers.template === 'custom') {
-    console.log('Will be supported soon');
-  }
 };

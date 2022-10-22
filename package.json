@@ -10,8 +10,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "npm run prettier:write",
-      "npm run eslint"
+      "npm run eslint",
+      "npm run prettier:write"
     ]
   },
   "scripts": {

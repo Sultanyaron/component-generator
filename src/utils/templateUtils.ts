@@ -1,4 +1,5 @@
 import { CustomTemplateChoice } from '../types';
+
 const lowerCaseFirstLetter = (value: string) => `${value[0].toLowerCase()}${value.slice(1)}`;
 
 export const getComponentSetupName = (componentName: string) =>

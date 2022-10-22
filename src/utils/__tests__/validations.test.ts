@@ -1,4 +1,5 @@
 import { hasWhiteSpace, isUpperCaseLetter, hasSpecialCharacters } from '../validations';
+
 describe('validations', () => {
   describe('hasWhiteSpace', () => {
     it('Should return true when whitespace exists', () => {

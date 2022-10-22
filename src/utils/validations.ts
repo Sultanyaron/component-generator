@@ -1,12 +1,6 @@
-export const hasWhiteSpace = (input: string) => {
-  return /\s/g.test(input);
-};
+export const hasWhiteSpace = (input: string) => /\s/g.test(input);
 
-export const isUpperCaseLetter = (letter: string) => {
-  return letter === letter.toUpperCase();
-};
+export const isUpperCaseLetter = (letter: string) => letter === letter.toUpperCase();
 
 const specialCharactersRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
-export const hasSpecialCharacters = (input: string) => {
-  return specialCharactersRegex.test(input);
-};
+export const hasSpecialCharacters = (input: string) => specialCharactersRegex.test(input);

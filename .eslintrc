@@ -26,7 +26,8 @@
   },
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-useless-escape": "off"
     // "import/no-unresolved": "off"
     // "import/extensions": ["off"]
   }

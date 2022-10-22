@@ -1,28 +1,21 @@
-import { readTemplate, saveTemplateToDestination } from "./fileUtils";
+import { readTemplate, saveTemplateToDestination } from './fileUtils';
 import {
   replaceComponentName,
   replaceTestSetupName,
   replaceTestUtilsName,
   getComponentSetupName,
-  getComponentTestUtilsName,
-} from "./templateUtils";
+  getComponentTestUtilsName
+} from './templateUtils';
 
-export const createTestFileAndUtils = async (
-  destinationPath: string,
-  componentName: string
-) => {
-  const componentTestTemplate = await readComponentTestAndApplyNames(
-    componentName
-  );
+export const createTestFileAndUtils = async (destinationPath: string, componentName: string) => {
+  const componentTestTemplate = await readComponentTestAndApplyNames(componentName);
 
   await saveTemplateToDestination(
     `${destinationPath}/__tests__`,
     `${componentName}.test.ts`,
     componentTestTemplate
   );
-  const testSetupTemplate = await readComponentSetupAndApplyNames(
-    componentName
-  );
+  const testSetupTemplate = await readComponentSetupAndApplyNames(componentName);
 
   await saveTemplateToDestination(
     `${destinationPath}/utils/test-utils`,
@@ -30,9 +23,7 @@ export const createTestFileAndUtils = async (
     testSetupTemplate
   );
 
-  const testUtilsTemplate = await readComponentTestUtilsAndApplyNames(
-    componentName
-  );
+  const testUtilsTemplate = await readComponentTestUtilsAndApplyNames(componentName);
   await saveTemplateToDestination(
     `${destinationPath}/utils/test-utils`,
     `${getComponentTestUtilsName(componentName)}.ts`,
@@ -41,7 +32,7 @@ export const createTestFileAndUtils = async (
 };
 
 const readComponentSetupAndApplyNames = async (componentName: string) => {
-  let template = await readTemplate("componentSetup.ts.template");
+  let template = await readTemplate('componentSetup.ts.template');
   template = replaceComponentName(template, componentName);
   template = replaceTestSetupName(template, componentName);
   template = replaceTestUtilsName(template, componentName);
@@ -49,7 +40,7 @@ const readComponentSetupAndApplyNames = async (componentName: string) => {
 };
 
 const readComponentTestAndApplyNames = async (componentName: string) => {
-  let template = await readTemplate("TemplateComponent.test.ts.template");
+  let template = await readTemplate('TemplateComponent.test.ts.template');
   template = replaceComponentName(template, componentName);
   template = replaceTestSetupName(template, componentName);
   template = replaceTestUtilsName(template, componentName);
@@ -57,7 +48,7 @@ const readComponentTestAndApplyNames = async (componentName: string) => {
 };
 
 const readComponentTestUtilsAndApplyNames = async (componentName: string) => {
-  let template = await readTemplate("componentTestUtils.ts.template");
+  let template = await readTemplate('componentTestUtils.ts.template');
   template = replaceTestUtilsName(template, componentName);
   return template;
 };

@@ -23,6 +23,6 @@ rollup.config.js
 tsconfig.json
 /src
 /templates
-.eslintrc.json
-.prettierrc.json
+.eslintrc
+.prettierrc
 .prettierignore

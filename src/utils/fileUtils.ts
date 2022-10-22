@@ -1,4 +1,4 @@
-import fsModule from 'fs';
+import * as fsModule from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 

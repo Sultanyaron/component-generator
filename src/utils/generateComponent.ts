@@ -11,8 +11,9 @@ export const generateComponent = async (promptAnswers: PromptAnswers, destinatio
 
   await createHooksAndComponentsFolders(destinationPath);
   // await createComponentBasicFiles(destinationPath, promptAnswers.componentName);
+  // await createComponentBasicFiles(destinationPath, promptAnswers.componentName);
 
-  if (promptAnswers.template === 'reuseable') {
+  if (promptAnswers.template === 'reuseabl') {
     await createReusableComponent(destinationPath, promptAnswers.componentName);
   }
 

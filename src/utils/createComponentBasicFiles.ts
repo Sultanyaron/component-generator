@@ -1,8 +1,4 @@
-import {
-  createHooksAndComponentsFolders,
-  readTemplate,
-  saveTemplateToDestination,
-} from "./fileUtils";
+import { readTemplate, saveTemplateToDestination } from "./fileUtils";
 import { replaceComponentName } from "./templateUtils";
 
 const readTemplateAndApplyComponentName = async (
@@ -17,8 +13,6 @@ export const createComponentBasicFiles = async (
   destinationPath: string,
   componentName: string
 ) => {
-  await createHooksAndComponentsFolders(destinationPath);
-
   const componentTemplate = await readTemplateAndApplyComponentName(
     "TemplateComponent.tsx.template",
     componentName

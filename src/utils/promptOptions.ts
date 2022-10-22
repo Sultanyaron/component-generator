@@ -33,8 +33,12 @@ export async function promptOptions(): Promise<PromptAnswers> {
       name: "template",
       message: "Please choose template type",
       choices: [
-        { name: "Default", value: "default" },
-        { name: "Custom", value: "custom" },
+        {
+          name: "Reusable component (Styles, types, tests and a story)",
+          value: "reuseable",
+        },
+        { name: "Component with test", value: "withTest" },
+        { name: "Custom (Choose your files)", value: "custom" },
       ],
     },
     {

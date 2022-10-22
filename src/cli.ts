@@ -9,10 +9,15 @@ export async function cli(args: Args) {
   const destinationPath = `${process.cwd()}/${promptAnswers.componentName}`;
 
   await generateComponent(promptAnswers, destinationPath);
+
   consoleFolderStructure(destinationPath);
 }
 
 // TODOS
+// create different combinations
+//  - Reuseable component (all)
+//  - Component with test (Component + style + types + test)
+//  - Custom (Test, Story, Style, Types)
 // add eslint
 // add prettier
 // write tests

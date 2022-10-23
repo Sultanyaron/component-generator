@@ -27,7 +27,7 @@ The cli is using prompt to get the component name and the required template
 - `npm test`
 - `npm link`
 - use `component-generator` Where ever you want to test your changes
-
+- Update the CHANGELOG.md inside the unreleased section, please follow the [CHANGELOG convention](https://keepachangelog.com/en/1.0.0/)
 - Create pull request
 - Wait for CI to pass
 - Merge

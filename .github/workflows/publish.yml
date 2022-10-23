@@ -22,8 +22,8 @@ jobs:
         run: npm run test:ci
       - name: Git configuration
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
+          git config --global user.email "8423431295+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "Github action"
       - name: Bump release version
         if: startsWith(github.event.inputs.release-type, 'pre') != true
         run: |

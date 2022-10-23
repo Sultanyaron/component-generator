@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 
 const componentNameTestUtils = {
-  getComponent: () => screen.getByTestId("your-test-id"),
+  getComponent: () => screen.getByTestId('your-test-id'),
 };
 
 export default componentNameTestUtils;

@@ -1,5 +1,5 @@
-import { render } from "@testing-library/react";
-import TemplateComponentName from "../../TemplateComponentName";
+import { render } from '@testing-library/react';
+import TemplateComponentName from '../../TemplateComponentName';
 
 const componentSetup = () => {
   render(<TemplateComponentName />);

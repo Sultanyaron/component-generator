@@ -1,8 +1,8 @@
 import componentSetup from '../utils/test-utils/componentSetup';
 import componentNameTestUtils from '../utils/test-utils/componentNameTestUtils';
 
-describe("TemplateComponentName", () => {
-  it("Should render your component", () => {
+describe('TemplateComponentName', () => {
+  it('Should render your component', () => {
     componentSetup();
 
     expect(componentNameTestUtils.getComponent()).toBeInTheDocument();

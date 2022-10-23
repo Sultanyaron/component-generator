@@ -14,9 +14,6 @@ export async function cli(args: Args) {
 }
 
 // TODOS
-// create different combinations
-//  - Custom (Test, Story, Style, Types)
-// add eslint
-// add prettier
 // write tests
 // readme
+// keywords (package.json)

@@ -2,16 +2,10 @@ import { PromptAnswers } from '../types';
 import { createReusableComponent } from './premadeTemplateGenerators/createReuseableComponent';
 import { createHooksAndComponentsFolders } from './fileUtils';
 import { createWithTestComponent } from './premadeTemplateGenerators/createWithTestComponent';
+import { createCustomComponent } from './customComponentGenerator/createCustomComponent';
 
 export const generateComponent = async (promptAnswers: PromptAnswers, destinationPath: string) => {
-  // const isDefaultTemplate = promptAnswers.template === "reuseable";
-  // const didCheckTemplateChoice = getTemplateChoiceChecker(
-  //   promptAnswers.customTemplateChoices
-  // );
-
   await createHooksAndComponentsFolders(destinationPath);
-  // await createComponentBasicFiles(destinationPath, promptAnswers.componentName);
-  // await createComponentBasicFiles(destinationPath, promptAnswers.componentName);
 
   if (promptAnswers.template === 'reuseable') {
     await createReusableComponent(destinationPath, promptAnswers.componentName);
@@ -19,5 +13,13 @@ export const generateComponent = async (promptAnswers: PromptAnswers, destinatio
 
   if (promptAnswers.template === 'withTest') {
     await createWithTestComponent(destinationPath, promptAnswers.componentName);
+  }
+
+  if (promptAnswers.template === 'custom') {
+    await createCustomComponent(
+      destinationPath,
+      promptAnswers.componentName,
+      promptAnswers.customTemplateChoices
+    );
   }
 };

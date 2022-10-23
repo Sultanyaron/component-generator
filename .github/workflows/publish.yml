@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies and build
         run: npm ci && npm run build
       - name: Run tests
-        run: npm run tests:ci
+        run: npm run test:ci
       - name: Git configuration
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"

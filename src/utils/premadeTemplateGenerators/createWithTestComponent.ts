@@ -1,10 +1,7 @@
-import { createComponentBasicFiles } from '../createComponentBasicFiles';
+import { createComponentWithTypesAndStyle } from '../createComponentFile';
 import { createTestFileAndUtils } from '../createTestFileAndUtils';
 
 export const createWithTestComponent = async (destinationPath: string, componentName: string) => {
-  await createComponentBasicFiles(destinationPath, componentName);
+  await createComponentWithTypesAndStyle(destinationPath, componentName);
   await createTestFileAndUtils(destinationPath, componentName);
-  // TODO
-  // style
-  // types
 };

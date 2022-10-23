@@ -30,11 +30,11 @@ export async function promptOptions(): Promise<PromptAnswers> {
       message: 'Please choose template type',
       choices: [
         {
-          name: 'Reusable component (Styles, types, tests and a story)',
+          name: 'Reusable component (styles, types, tests and a story)',
           value: 'reuseable'
         },
         { name: 'Component with test', value: 'withTest' },
-        { name: 'Custom (Choose your files)', value: 'custom', disabled: true }
+        { name: 'Custom (Choose your files)', value: 'custom' }
       ]
     },
     {
@@ -46,7 +46,9 @@ export async function promptOptions(): Promise<PromptAnswers> {
       },
       choices: [
         { name: 'Test', value: 'test' },
-        { name: 'Story', value: 'story' }
+        { name: 'Story', value: 'story' },
+        { name: 'Types', value: 'types' },
+        { name: 'Style', value: 'style' }
       ]
     }
   ];

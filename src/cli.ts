@@ -15,5 +15,6 @@ export async function cli(args: Args) {
 
 // TODOS
 // write tests
-// readme
 // keywords (package.json)
+// Fix push issue with Gh action on publish
+// Add PR CI

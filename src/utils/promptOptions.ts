@@ -45,10 +45,10 @@ export async function promptOptions(): Promise<PromptAnswers> {
         return answers.template === 'custom';
       },
       choices: [
-        { name: 'Test', value: 'test' },
-        { name: 'Story', value: 'story' },
+        { name: 'Style', value: 'style' },
         { name: 'Types', value: 'types' },
-        { name: 'Style', value: 'style' }
+        { name: 'Test', value: 'test' },
+        { name: 'Story', value: 'story' }
       ]
     }
   ];

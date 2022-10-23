@@ -22,8 +22,11 @@ The cli is using prompt to get the component name and the required template
 
 ## Contribute
 
-`npm install`
-`npm test`
+- `npm install`
+- `npm run dev`
+- `npm test`
+- `npm link`
+- use `component-generator` Where ever you want to test your changes
 
 - Create pull request
 - Wait for CI to pass

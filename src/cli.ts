@@ -18,3 +18,4 @@ export async function cli(args: Args) {
 // keywords (package.json)
 // Fix push issue with Gh action on publish
 // Add PR CI
+// Add -v arg to get the version

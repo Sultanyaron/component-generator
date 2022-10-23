@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       release-type:
-        description: "Release type (one of): patch, minor, major, prepatch, preminor, premajor, prerelease"
+        description: 'Release type (one of): patch, minor, major, prepatch, preminor, premajor, prerelease'
         required: true
 jobs:
   release:
@@ -14,10 +14,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: "14.x"
-          registry-url: "https://registry.npmjs.org"
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies and build
         run: npm ci && npm run build
+      - name: Run tests
+        run: npm run test:ci
       - name: Git configuration
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"

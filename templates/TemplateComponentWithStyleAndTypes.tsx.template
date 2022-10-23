@@ -1,0 +1,8 @@
+import * as S from './TemplateComponentName.style';
+import { TemplateComponentNameProps } from './TemplateComponentName.types';
+
+const TemplateComponentName = ({}: TemplateComponentNameProps) => {
+  return <S.Container data-testid="your-test-id">TemplateComponentName</S.Container>;
+};
+
+export default TemplateComponentName;

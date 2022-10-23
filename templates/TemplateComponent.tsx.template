@@ -1,7 +1,5 @@
-import * as S from './TemplateComponentName.style';
-
 const TemplateComponentName = () => {
-  return <S.Container data-testid="your-test-id">TemplateComponentName</S.Container>;
+  return <div data-testid="your-test-id">TemplateComponentName</div>;
 };
 
 export default TemplateComponentName;

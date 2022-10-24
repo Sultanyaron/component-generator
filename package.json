@@ -24,7 +24,13 @@
     "eslint": "eslint src --color",
     "types-check": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "component",
+    "generator",
+    "component-generator",
+    "react",
+    "creator"
+  ],
   "author": "sultanyaron@gmail.com",
   "license": "ISC",
   "devDependencies": {

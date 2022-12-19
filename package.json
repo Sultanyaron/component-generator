@@ -1,6 +1,6 @@
 {
   "name": "@sultanyaron/component-generator",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "private": false,
   "description": "A component generator CLI for redis FE developers",
   "main": "dist/cli.js",
